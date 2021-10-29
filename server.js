@@ -24,6 +24,10 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
   console.log("connecté à Mongoose")
 });
+app.listen(5000, () => {
+  console.log("Server is Runing On port 5000");
+
+});
 
 var dir = './uploads';
 var upload = multer({
@@ -377,10 +381,7 @@ app.get("/get-product", (req, res) => {
 
 });
 
-app.listen(5000, () => {
-  console.log("Server is Runing On port 5000");
 
-});
 
 
 // Get all cars
