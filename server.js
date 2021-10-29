@@ -10,7 +10,7 @@ var multer = require('multer'),
   path = require('path');
 var mongoose = require("mongoose");
 var http = require('http');
-const mydb = "mongodb://localhost/Car"
+const mydb = "mongodb+srv://saynatest:saynatest@cluster0.rpee7.mongodb.net/saynadb?retryWrites=true&w=majority"
 
 mongoose.connect(mydb, { useNewUrlParser: true, useUnifiedTopology: true });
 var fs = require('fs');
