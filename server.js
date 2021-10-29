@@ -377,8 +377,8 @@ app.get("/get-product", (req, res) => {
 
 });
 
-app.listen(2000, () => {
-  console.log("Server is Runing On port 2000");
+app.listen("https://back-sayna.herokuapp.com", () => {
+  console.log("Server is Runing On port https://back-sayna.herokuapp.com");
 
 });
 
